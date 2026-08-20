@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fenalco_reportes_interfaz_unoe,fenalco.reportes.interfaz.unoe user,model_fenalco_reportes_interfaz_unoe,group_cuadre_cajas_user,1,1,1,1
+access_fenalco_reportes_interfaz_consolidado,fenalco.reportes.interfaz.consolidado user,model_fenalco_reportes_interfaz_consolidado,group_cuadre_cajas_user,1,1,1,1
