@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Expone _fv_forma_pago_id en el formulario normal de Diario, para
+             poder configurarlo sin modo desarrollador. Puerto recortado de
+             view_account_journal_form_inherit_fenalco (el original agrega
+             ahí más campos de la interfaz contable UnoE, fuera de alcance). -->
+        <record id="view_account_journal_form_inherit_fenalco_cuadre_cajas" model="ir.ui.view">
+            <field name="name">account.journal.form.inherit.fenalco.cuadre.cajas</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@id='inbound_payment_settings']" position="after">
+                    <page string="Recaudo Nacional" name="relacion_forma_pago_fenalco">
+                        <group>
+                            <field name="_fv_forma_pago_id" help="Código de forma de pago que trae Oracle (ID_FORMA_PAGO) para el reporte Listado Consolidado de Recaudos"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

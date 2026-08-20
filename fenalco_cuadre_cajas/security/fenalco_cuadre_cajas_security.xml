@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="module_category_fenalco_cuadre_cajas" model="ir.module.category">
+            <field name="name">Fenalco Cuadre de Cajas</field>
+            <field name="sequence">50</field>
+        </record>
+
+        <record id="group_cuadre_cajas_user" model="res.groups">
+            <field name="name">Usuario Cuadre de Cajas</field>
+            <field name="category_id" ref="module_category_fenalco_cuadre_cajas"/>
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>
+    </data>
+</odoo>

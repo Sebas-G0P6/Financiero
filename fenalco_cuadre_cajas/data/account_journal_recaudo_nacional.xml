@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+
+        <record id="journal_fv_1_efectivo" model="account.journal">
+            <field name="name">Efectivo</field>
+            <field name="code">EFET</field>
+            <field name="type">cash</field>
+            <field name="_fv_forma_pago_id">1</field>
+        </record>
+
+        <record id="journal_fv_2_cheque" model="account.journal">
+            <field name="name">Cheque</field>
+            <field name="code">CHEF</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">2</field>
+        </record>
+
+        <record id="journal_fv_15_tarjeta_debito" model="account.journal">
+            <field name="name">Tarjeta debito</field>
+            <field name="code">TDD</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">15</field>
+        </record>
+
+        <record id="journal_fv_16_tarjeta_credito" model="account.journal">
+            <field name="name">Tarjeta credito</field>
+            <field name="code">TCC</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">16</field>
+        </record>
+
+        <record id="journal_fv_19_transferido" model="account.journal">
+            <field name="name">TRANSFERIDO</field>
+            <field name="code">TRA</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">19</field>
+        </record>
+
+        <record id="journal_fv_20_conciliatorio" model="account.journal">
+            <field name="name">Conciliatorio</field>
+            <field name="code">CHEF1</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">20</field>
+        </record>
+
+        <record id="journal_fv_21_reconsignacion" model="account.journal">
+            <field name="name">RECONSIGNACION</field>
+            <field name="code">TRA1</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">21</field>
+        </record>
+
+        <record id="journal_fv_22_plaza_efectivo" model="account.journal">
+            <field name="name">Plaza efectivo</field>
+            <field name="code">EFET1</field>
+            <field name="type">cash</field>
+            <field name="_fv_forma_pago_id">22</field>
+        </record>
+
+        <record id="journal_fv_24_tu_compra" model="account.journal">
+            <field name="name">Ws tu compra</field>
+            <field name="code">OCCA1</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">24</field>
+        </record>
+
+        <record id="journal_fv_26_banco_occidente" model="account.journal">
+            <field name="name">Occidente cta cte 6571</field>
+            <field name="code">OCC</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">26</field>
+        </record>
+
+        <record id="journal_fv_27_bog_fco_efe_0025" model="account.journal">
+            <field name="name">B_BOG_FCO_EFE_0025</field>
+            <field name="code">WSBO4</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">27</field>
+        </record>
+
+        <record id="journal_fv_28_bog_fiducolpatria_efe" model="account.journal">
+            <field name="name">Ws b_bog_fiducolpatria_efe 4674</field>
+            <field name="code">COLA1</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">28</field>
+        </record>
+
+        <record id="journal_fv_30_bog_efe_9717" model="account.journal">
+            <field name="name">WS B_BOG_EFE_9717</field>
+            <field name="code">WSBO1</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">30</field>
+        </record>
+
+        <record id="journal_fv_32_compensacion_colpatria" model="account.journal">
+            <field name="name">Compensacion colpatria</field>
+            <field name="code">EFET2</field>
+            <field name="type">cash</field>
+            <field name="_fv_forma_pago_id">32</field>
+        </record>
+
+        <record id="journal_fv_33_pagos_id_bog_efe_2033" model="account.journal">
+            <field name="name">Ws pagos con id bog_efe_2033</field>
+            <field name="code">WSBOG</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">33</field>
+        </record>
+
+        <record id="journal_fv_41_davivienda_ahorros_3341" model="account.journal">
+            <field name="name">ws b_davivienda_ahorros_3341</field>
+            <field name="code">BCC2</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">41</field>
+        </record>
+
+        <record id="journal_fv_42_davivienda_ahorros_8427" model="account.journal">
+            <field name="name">Ws b_davivienda_ahorros_8427</field>
+            <field name="code">COLA2</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">42</field>
+        </record>
+
+        <record id="journal_fv_44_cheque_virtual" model="account.journal">
+            <field name="name">CHEQUE_VIRTUAL</field>
+            <field name="code">CHEF2</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">44</field>
+        </record>
+
+        <record id="journal_fv_45_colpatria_ahorros_4049" model="account.journal">
+            <field name="name">ws b_colpatria_ahorros_4049</field>
+            <field name="code">WSBO2</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">45</field>
+        </record>
+
+        <record id="journal_fv_46_colpatria_ahorros_3654" model="account.journal">
+            <field name="name">Ws b_colpatria_ahorros_3654</field>
+            <field name="code">COLA</field>
+            <field name="type">bank</field>
+            <field name="_fv_forma_pago_id">46</field>
+        </record>
+
+        <!-- Caso especial: el bloque "Pagos Manuales Open" del SQL no usa
+             _fv_forma_pago_id, usa directamente el código corto 'BANCO'. -->
+        <record id="journal_fv_banco_especial" model="account.journal">
+            <field name="name">Bancos</field>
+            <field name="code">BANCO</field>
+            <field name="type">bank</field>
+        </record>
+
+    </data>
+</odoo>
